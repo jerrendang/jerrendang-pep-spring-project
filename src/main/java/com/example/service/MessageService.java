@@ -39,7 +39,6 @@ public class MessageService {
     }
 
     public Integer updateMessageById(Integer messageId, String message_text){
-        // return nums rows affected
         Message message = this.getMessageById(messageId);
 
         message.setMessageText(message_text);
